@@ -1,0 +1,5 @@
+node_modules
+.env
+finances-413101-e4e6fae6c61b.json
+output.json
+spreadsheetCache.json

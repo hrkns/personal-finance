@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finanzas Personales</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Finanzas Personales</h1>
+    <div>
+      <span>Google Sheet URL:</span>
+      <input
+        type="text"
+        id="sheetUrl"
+        placeholder="Enter Google Sheet URL here"
+      />
+    </div>
+    <div>
+      <input type="checkbox" id="useCache" checked />
+      <label for="useCache">Use Cache</label>
+    </div>
+    <button id="fetchData">Fetch Data</button>
+    <div style="display: none" id="categorySelectContainer">
+      <span>Seleccione categorias a visualizar:</span>
+      <select
+        id="categorySelect"
+        multiple="multiple"
+        style="width: 50%"
+      ></select>
+    </div>
+    <div style="display: none" id="monthSelectContainer">
+      <span>Seleccione meses a visualizar:</span>
+      <select id="monthSelect" multiple="multiple" style="width: 50%">
+        <option value="all" selected>Todos</option>
+        <option value="Enero">Enero</option>
+        <option value="Febrero">Febrero</option>
+        <option value="Marzo">Marzo</option>
+        <option value="Abril">Abril</option>
+        <option value="Mayo">Mayo</option>
+        <option value="Junio">Junio</option>
+        <option value="Julio">Julio</option>
+        <option value="Agosto">Agosto</option>
+        <option value="Septiembre">Septiembre</option>
+        <option value="Octubre">Octubre</option>
+        <option value="Noviembre">Noviembre</option>
+        <option value="Diciembre">Diciembre</option>
+      </select>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
